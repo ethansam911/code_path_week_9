@@ -17,11 +17,19 @@ Each color is vulnerable to only 2 of the 6 possible exploits. First discover wh
 
 ## Blue
 
-Vulnerability #1: __________________
+Vulnerability #1: User Enumeration
 
 Description:
 
-<img src="blue-vuln1.gif">
+1. Navigate to mirror 1 or 2 on the assignment page.
+2. Click on "Blue Target"
+3. Click on "Login" on the blue taskbar
+4. Navigate to "Users"
+5. Click "Show" on any one of the users
+6. View the URL and notice that there is a given ID value associated with each user.
+7. Change this value to view other users (You will see blank/empty users) 
+
+![alt text](https://github.com/ethansam911/code_path_week_9/blob/main/blue_user_enumeration.gif)
 
 Vulnerability #2: __________________
 
