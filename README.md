@@ -111,7 +111,7 @@ Vulnerability #2: Cross-Site Request Forgery (CSRF)
   * [x]  This page secretly makes a post request on page load and hides the outcome in a hidden iframe. 
   * [x]  As result, an account in the database is altered.
 
-![alt text](https://github.com/ethansam911/code_path_week_9/blob/main/red_xss.gif)
+![alt text](https://github.com/ethansam911/code_path_week_9/blob/main/red_csrf.gif)
 
 ## Notes
 
