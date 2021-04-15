@@ -85,7 +85,7 @@ Description:
   * [x]  Below GIF show an attacker getting access to the hidden user's accounts that the attacker is not permitted to view. 
   * [x]  This is done through modifying the "id" parameter in the URL's to change the GET request.
   * [x]  Below are the accounts that the Attacker is able to access:
-![alt text](https://github.com/ethansam911/code_path_week_9/blob/main/red_attackers.gif)
+![alt text](https://github.com/ethansam911/code_path_week_9/blob/main/red_idor.gif)
 
 
 Vulnerability #2: Cross-Site Request Forgery (CSRF)
