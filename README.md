@@ -48,7 +48,10 @@ Vulnerability #1: User Enumeration
 
 Description:
 
-  * [x]  Inspect element "class" when entering the right username differs from using the wrong username
+ * [x]  Seen below, the Green Website has the Username Enumeration error where the failure to login message differs for the Username that exists vs doesn't exist.
+  * [x]  Using firefox's debugging tool, I was able to see that the Developer assigns two different classes, failed and failure, to the error message depending on the login senerio.
+  * [x]  The "failure" class is applied an bold style in css while "failed" class doesn't. (Screen shots below)
+
 ![alt text](https://github.com/ethansam911/code_path_week_9/blob/main/green_login_1.png)
 
 ![alt text](https://github.com/ethansam911/code_path_week_9/blob/main/green_login_2.png)
@@ -56,11 +59,20 @@ Description:
 ![alt text](https://github.com/ethansam911/code_path_week_9/blob/main/green_user_enumeration.gif)
 
 
-Vulnerability #2: __________________
+Vulnerability #2: Cross-Site Scripting (XSS)
 
 Description:
 
+* [x]  Attacker can inject an XSS in their feedback form.
 
+* [x] Injected XSS Command    
+
+```html
+<script>alert('We got in!!!!!!!!');</script>
+```
+* [x]  This XSS runs once the account holder checks their feedback page
+
+![alt text](https://github.com/ethansam911/code_path_week_9/blob/main/green_xss.gif)
 
 
 ## Red
