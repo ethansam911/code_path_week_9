@@ -38,23 +38,29 @@ Vulnerability #2: Session Hijacking/Fixation
   * [x]  The Victim's session ID is obtained through the tool that is provided by the codepath
   * [x]  From the intercepted session, we can modify the session ID to the one we obtained from the Victim
   * [x]  The the attacker is logged in using the Victim's session ID
-(Burpsuite can be used to intercept packets)
+(Burpsuite can be used to intercept packets - view the session ID here as well and copy it down)
 
-<img src="blue-vuln2.gif">
+
 
 ## Green
 
-Vulnerability #1: __________________
+Vulnerability #1: User Enumeration
 
 Description:
 
-<img src="green-vuln1.gif">
+  * [x]  Inspect element "class" when entering the right username differs from using the wrong username
+![alt text](https://github.com/ethansam911/code_path_week_9/blob/main/green_login_1.png)
+
+![alt text](https://github.com/ethansam911/code_path_week_9/blob/main/green_login_2.png)
+
+![alt text](https://github.com/ethansam911/code_path_week_9/blob/main/green_user_enumeration.gif)
+
 
 Vulnerability #2: __________________
 
 Description:
 
-<img src="green-vuln2.gif">
+
 
 
 ## Red
@@ -63,13 +69,13 @@ Vulnerability #1: __________________
 
 Description:
 
-<img src="red-vuln1.gif">
+
 
 Vulnerability #2: __________________
 
 Description:
 
-<img src="red-vuln2.gif">
+
 
 
 ## Notes
